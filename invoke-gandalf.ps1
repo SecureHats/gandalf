@@ -52,7 +52,7 @@ $defender = switch ($level) {
 
 $uri = 'https://gandalf.lakera.ai/api/guess-password'
 
-Write-Host "[+] Starting Attack on Level $level [$defender]`n"
+Write-Host "[+] Starting Attack on Level $level [$defender]"
 $date = Get-Date
 Write-Host "   [-] Date: $date`n"
 
@@ -62,8 +62,8 @@ $agents = (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/SecureHats/
 
 Write-Host "   [-] Processing Dictionary..."
 $dictionary = Get-Content -Path 'rockyou-filtered.txt' -ReadCount 10000000
-$subdict = $dictionary -cmatch '^[a-z]{9}$'
-Write-Host "       $($subdict.count) results found"
+$subdict = $dictionary -cmatch '^[a-z]{8,11}$'
+Write-Host "       Processing $($subdict.count) options...`n"
 Write-Host "   [-] Sending Requests..."
 
 foreach ($item in $subdict) {
