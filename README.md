@@ -6,8 +6,7 @@
 
 # Attacking Gandalf
 
-![image](https://github.com/SecureHats/gandalf/assets/40334679/6f9aca2e-1f0e-470b-8a6c-ee94109b575b)
-
+![image](https://github.com/SecureHats/gandalf/assets/40334679/4168f1bf-fffe-44cf-9198-aba3f8224883)
 
 So you are getting frustrated by Gandalf? I know that feeling, and that is why I am helping you out.  
 Lakare has put great effort into creating the Gandalf AI game, and I really loved playing it.
