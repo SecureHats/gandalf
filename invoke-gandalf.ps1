@@ -2,7 +2,7 @@
 param (
     [Parameter(Mandatory = $True)]
             [String[]]
-            [ValidateSet("1", "2", "3", "4", "5", "6", "7", "8", "sandalf", "adventures", "adventures3")]
+            [ValidateSet("1", "2", "3", "4", "5", "6", "7", "8", "sandalf", "emoji", "adventure-3")]
             $level
 )
 
@@ -45,8 +45,8 @@ $defender = switch ($level) {
     6 {"gpt-blacklist"}
     7 {"gandalf"}
     8 {"gandalf-the-white"}
-    "sandalf" {"sandalf"}
-    "adventures" {"adventure-2"}
+    "sandalf" {"adventure-1"}
+    "emoji" {"adventure-2"}
     "adventures3" {"adventure-3"}
     Default {}
 }
