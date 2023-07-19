@@ -2,7 +2,7 @@
 param (
     [Parameter(Mandatory = $True)]
             [String[]]
-            [ValidateSet("1", "2", "3", "4", "5", "6", "7", "8", "sandalf", "adventures")]
+            [ValidateSet("1", "2", "3", "4", "5", "6", "7", "8", "sandalf", "adventures", "adventures3")]
             $level
 )
 
@@ -47,6 +47,7 @@ $defender = switch ($level) {
     8 {"gandalf-the-white"}
     "sandalf" {"sandalf"}
     "adventures" {"adventure-2"}
+    "adventures3" {"adventure-3"}
     Default {}
 }
 
