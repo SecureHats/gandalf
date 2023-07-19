@@ -19,9 +19,9 @@ To limit the number of attempts required by analyzing the passwords in the Ganda
 
 ## How to get started
 
-- [] Clone this repo
-- [] go to the repo folder
-- [] run the script `invoke-gandalf -level 1`
+- [x] Clone this repo
+- [x] go to the repo folder
+- [x] run the script `invoke-gandalf -level 1`
 
 ```powershell
 Invoke-Gandalf -level 1
