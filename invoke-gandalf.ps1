@@ -58,11 +58,11 @@ $date = Get-Date
 Write-Host "   [-] Date: $date`n"
 
 Write-Host "[+] Loading Dictionary..."
-(Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/SecureHats/gandalf/main/rockyou-filtered.txt').Content | Out-File -FilePath 'rockyou-filtered.txt'
+(Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/SecureHats/gandalf/main/rocked.txt').Content | Out-File -FilePath 'rocked.txt'
 $agents = (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/SecureHats/gandalf/main/constants.json').Content | ConvertFrom-Json
 
 Write-Host "   [-] Processing Dictionary..."
-$dictionary = Get-Content -Path 'rockyou-filtered.txt' -ReadCount 10000000
+$dictionary = Get-Content -Path 'rocked.txt' -ReadCount 10000000
 $subdict = $dictionary -cmatch '^[a-z]{8,11}$'
 Write-Host "       Processing $($subdict.count) options...`n"
 Write-Host "   [-] Sending Requests..."
