@@ -47,7 +47,7 @@ $defender = switch ($level) {
     8 {"gandalf-the-white"}
     "sandalf" {"adventure-1"}
     "emoji" {"adventure-2"}
-    "adventures3" {"adventure-3"}
+    "adventure-3" {"adventure-3"}
     Default {}
 }
 
